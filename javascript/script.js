@@ -11,7 +11,7 @@ let myInterval;
 
 formEl.addEventListener("submit", function(e){
     e.preventDefault();
-    sendData(e, formEl, 5, klikk);
+    sendData(e, formEl, 2, klikk);
 })
 
 klikkområdeEl.addEventListener("click", function (e) {
