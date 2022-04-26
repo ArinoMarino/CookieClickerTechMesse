@@ -1,7 +1,7 @@
 var textEL = document.getElementById("txt")
 const countdown = document.getElementById("countdown")
 var klikk = 0
-let time = 10
+let time = 30
 
 let klikkområdeEl = document.getElementById("klikkområde")
 let formEl = document.getElementById("form")
@@ -11,7 +11,7 @@ let myInterval;
 
 formEl.addEventListener("submit", function(e){
     e.preventDefault();
-    sendData(e, formEl, 2, klikk);
+    sendData(formEl, 2, klikk);
 })
 
 klikkområdeEl.addEventListener("click", function (e) {
