@@ -12,6 +12,7 @@ let myInterval;
 formEl.addEventListener("submit", function(e){
     e.preventDefault();
     sendData(formEl, 2, klikk);
+    formEl.style.display = "none";
 })
 
 klikkområdeEl.addEventListener("click", function (e) {
@@ -25,8 +26,10 @@ klikkområdeEl.addEventListener("click", function (e) {
     textEL.innerHTML = "Klikk: " + klikk
     if (time <= 0) {
         clearInterval(myInterval);
-        countdown.innerHTML = '00:00'
-        alert(klikk)
+        countdown.innerHTML = '00:00';
+        alert(`Du klarte ${klikk} klikk`);
+        formEl.style.display = "";
+        
     }
 
 
